@@ -42,14 +42,26 @@ form {
 }
 
 form input {
-    border: 1px solid #ccc;
+    outline: 1px solid #ccc;
+    border: none;
     border-radius: 4px;
 
     width: 100%;
     margin: 0.5rem 0;
     padding: 0.5rem;
+}
 
-    display: inline-block;
+input:focus {
+    outline: 2px solid #98c4e1;
+}
+
+input:invalid {
+    outline: 2px solid #d75151;
+}
+
+.message {
+    color: #d75151;
+    font-size: 0.8rem;
 }
 
 .button {
